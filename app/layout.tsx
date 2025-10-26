@@ -24,7 +24,12 @@ export default function RootLayout({
       <body
         className={` ${robotoFlex.variable} antialiased`}
       >
-        {children}
+        
+          <main className='p-5'>
+            
+             {children}
+          </main>
+        
       </body>
     </html>
   );

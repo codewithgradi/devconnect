@@ -1,11 +1,10 @@
-import React from 'react'
+import AppSidebar from "@/components/AppSidebar";
 
-const Home = () => {
+
+export default function Home() {
   return (
     <div>
-      Home Page
+     <AppSidebar/>
     </div>
   )
 }
-
-export default Home
