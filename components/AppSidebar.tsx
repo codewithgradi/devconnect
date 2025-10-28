@@ -65,13 +65,14 @@ export default function AppSidebar() {
   ]
   return (
     <div>
+      <nav className='w-2xl fixed'>
       <Image src={ logo} alt='Logo' width={100} height={100}/>
-        <nav className='w-2xl'>
+        
             <ul>
           {items.map(item => (
             <Link href={item.url} key={item.id}>
                 <li  className='flex items-center p-5 gap-5'>
-                  <item.icon/>
+                  <item.icon className='text-green-800'/>
                   <span>{ item.title}</span>
               </li>
             </Link>
